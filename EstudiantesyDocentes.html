@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Estudiantes y Docentes</title>
+    
+<style>
+    body {
+        background-color: #c1d4e9;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .menu {
+        List-style:none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+    }
+    .menu li{ 
+            position: relative;
+            background: #3bc7ff;
+            padding: 10 px;
+            color:  white;
+            cursor: default;
+            border-radius: 15px;
+        }
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            color: black;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+
+        }
+        .submenu table{
+            border-collapse: collapse;
+            width: 100%;
+
+        }
+        .submenu td, .submenu th {
+            border:  1px solid #ddd;
+            padding: 8px;
+        }
+
+        .menu li:hover  .submenu {
+            display: block;
+        }
+
+        .submenu button { 
+            padding: 8px 15px;
+            background-color: aqua;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 4px 6px 4px cornflowerblue;
+            transition: transform 0.3s, background-color 0.3s;
+
+        }
+        .submenu button:hover {  
+            background-color: aqua;
+            transform: scale(1.1);
+
+         }
+
+         .botton-llamativo  {
+            background-color: aqua;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 8px 10px 6px cornsilk;
+            margin-top: 30px;
+         }
+.botton-llamativo:hover { 
+    background-color: aqua;
+    transform: scale(1.2);
+}
+Center { 
+    text-align: center;
+
+ }
+
+            </style>
+
+    
+</head>
+     <body> 
+       <center> <h1 class="center"> Estudiantes y Docentes</h1>
+       
+        <ul class="menu"> 
+            <li> 
+              DOCENTES
+                <div class="submenu">
+                <table> 
+                  
+                    <tr><th>DOCENTES</th></tr>
+                     <tr> <td> <a href="file:///C:/Users/jazmi/OneDrive/Escritorio/clases/Desarrollo%20web/Proyecto/DOCENTES%20Y%20ESTUDIANTES.pdf" target="_blank"> <button>Docentes</button></a></td></tr>
+                </table>
+
+                </div>
+            </li>
+            <li> 
+               ESTUDIANTES 
+                <div class="submenu">
+                <table> 
+                    <tr><th>ESTUDIANTES</th></tr>
+                    <tr><td><a href=""target="_blank"><button>D25</button></a></td></tr>
+                </table>
+  </div>
+   </li>
+</ul>
+
+<div class="center">
+ <a href="index.html">
+    <button class="boton-llamativo"> Atrás</button>
+</a> 
+</div>
+</center>
+</body>
+</html> 
